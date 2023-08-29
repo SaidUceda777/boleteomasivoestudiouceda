@@ -222,7 +222,7 @@
       .then(res => res.json())
       .then(data => {console.log(data);   musica.play(); })
       .catch(error => {console.log(error); musica.play();})
-      .then(response => console.log('Success:', response)); 
+      .then(response => { console.log('Success:', response)  ; musica.play(); }); 
     };
     
     document.getElementById('cargardatos2').addEventListener('click', sendRequest);
