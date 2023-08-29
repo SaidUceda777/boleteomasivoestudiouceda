@@ -167,9 +167,13 @@
 
 </div>
 
+<audio id="musica" controls style="display: none;" >
+    <source src="miu.mp3" type="audio/mpeg">
+  </audio>
+
 <script> 
     
- 
+  const musica = document.getElementById('musica');
    
 
     const url = 'http://localhost:3000/boleteo';
@@ -216,7 +220,7 @@
         body: JSON.stringify(data)
       })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {console.log(data);   musica.play(); })
       .catch(error => console.log(error))
       .then(response => console.log('Success:', response)); 
     };
