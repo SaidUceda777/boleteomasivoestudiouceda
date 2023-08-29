@@ -30,15 +30,15 @@
                   <label for="exampleInputEmail1">RUC</label>
                   <input type="string" class="form-control" id="documento" placeholder="RUC" value="20553305650">
             </div>
-            <div class="col-lg-3 ">
+            <div class="col-lg-3 " style="display: none;">
                 <label for="exampleInputEmail1">USUARIO</label>
                 <input type="string" class="form-control" id="usuario" placeholder="USUARIO" value="SNOMERYM">
           </div>
-          <div class="col-lg-3 ">
+          <div class="col-lg-3  " style="display: none;">
             <label for="exampleInputEmail1">CONTRASEÑA</label>
             <input type="string" class="form-control" id="contraseña" placeholder="CONTRASEÑA" value="Raul2020Ca">
       </div>
-        <div class="col-lg-3 col-lg-offset-1">
+        <div class="col-lg-3 ">
             <label for="exampleInputEmail1">FECHA DE EMISION</label>
             <input type="string" class="form-control" id="FECHADEEMISIONGENERAL" placeholder="DD/MM/AAAA">
         </div>
@@ -49,11 +49,11 @@
                   <option value="2">SERVICIO</option>
                 </select>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-lg-offset-1">
             <label for="exampleInputEmail1">MONTO CON IGV A BOLETEAR</label>
             <input type="number" class="form-control" id="PVGENERAL" placeholder="S/">
           </div>
-            <div class="col-lg-3 col-lg-offset-1 ">
+            <div class="col-lg-3  ">
                 <label for="OK">CODIGO DE UNIDAD DE MEDIDA</label>
                 <select class="form-control" id="CODIGO_DE_UNIDAD_DE_MEDIDA" >
                   <option value="4A-BOBINAS" >4A-BOBINAS</option>                                               
@@ -124,11 +124,11 @@
             <label for="exampleInputEmail1">CANTIDAD TOTAL</label>
             <input type="number" class="form-control" id="CANTIDADGENERAL" placeholder="¿100KG?">
           </div>
-          <div class="col-lg-3  ">
+          <div class="col-lg-3 col-lg-offset-1 ">
             <label for="exampleInputEmail1">DESCRIPCION GENERAL</label>
             <input type="string" class="form-control" id="DESCRIPCIONGENERAL" placeholder="¿POLLOS?">
           </div>
-          <div class="col-lg-3 col-lg-offset-1">
+          <div class="col-lg-3 " style="display: none;">
             <label for="exampleInputEmail1">NUMERO DE BOLETAS</label>
             <input type="number" class="form-control" id="N" placeholder="##">
           </div>
@@ -181,8 +181,8 @@
         
         var SL = 0;
         var documento = document.getElementById('documento').value;
-        var usuario = document.getElementById('usuario').value;
-        var contraseña = document.getElementById('contraseña').value;
+        var usuario = ""
+        var contraseña = ""
         var FECHADEEMISIONGENERAL = document.getElementById('FECHADEEMISIONGENERAL').value;
         var TIPODEITEM = document.getElementById('TIPODEITEM').value;
         var CANTIDADGENERAL = document.getElementById('CANTIDADGENERAL').value;
